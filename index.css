@@ -1,3 +1,6 @@
 button {
-    width:100%;
+    background-color:#848C8E;
+    color: black;
+    border: solid black 2px;
+    width:100%
 }
