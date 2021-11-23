@@ -1,29 +1,18 @@
 const input = document.querySelector('input');
-const addBtn = document.querySelector('#add');
-const equalBtn = document.querySelector('#equal');
-const clrBtn = document.querySelector('#clr');
-const oneBtn = document.querySelector('#one');
-const twoBtn = document.querySelector('#two');
-const threeBtn = document.querySelector('#three');
-const fourBtn = document.querySelector('#four');
-const fiveBtn = document.querySelector('#five');
-const sixBtn = document.querySelector('#six');
-const sevenBtn = document.querySelector('#seven');
-const eightBtn = document.querySelector('#eight');
-const nineBtn = document.querySelector('#nine');
-const zeroBtn = document.querySelector('#zero');
+document.querySelector('#add').onclick = () => input.value+='+';
+document.querySelector('#multiply').onclick = () => input.value+='*';
+document.querySelector('#clr').onclick = () => input.value='';
+document.querySelector('#decimal').onclick = () => input.value+='.';
+document.querySelector('#one').onclick = () => input.value+='1';
+document.querySelector('#two').onclick = () => input.value+='2';
+document.querySelector('#three').onclick = () => input.value+='3';
+document.querySelector('#four').onclick = () => input.value+='4';
+document.querySelector('#five').onclick = () => input.value+='5';
+document.querySelector('#six').onclick = () => input.value+='6';
+document.querySelector('#seven').onclick = () => input.value+='7';
+document.querySelector('#eight').onclick = () => input.value+='8';
+document.querySelector('#nine').onclick = () => input.value+='9';
+document.querySelector('#zero').onclick = () => input.value+='0';
 
 
-
-zeroBtn.onclick = () => input.value+='0';
-oneBtn.onclick = () => input.value+='1';
-twoBtn.onclick = () => input.value+='2';
-threeBtn.onclick = () => input.value+='3';
-
-
-
-
-
-
-addBtn.onclick = () => input.value+='+';
-clrBtn.onclick = () => input.value='';
+document.querySelector('#equal').onclick = () => input.value = eval(input.value);
