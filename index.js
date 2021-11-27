@@ -30,7 +30,7 @@ document.querySelector('#zero').onclick = () => input.value+='0';
 document.querySelector('#equal').onclick = function () {axios.post(`http://localhost:4004/solution`,{data: input.value})
 .then(function (response) {
     input.value = response.data;
-    console.log(response);
+    //console.log(response);
 });
 }
 

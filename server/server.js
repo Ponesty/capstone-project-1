@@ -17,25 +17,27 @@ app.post('/solution', (req,res) =>{
     }
     saves.push(equation);
     index = saves.length;
-   // console.log(`This is req: ${equation}`);
     let solution = eval(equation);
-    //console.log(solution);
     res.status(200).send(`${solution}`);
 });
 
 app.get('/previous', (req,res) => {
-    if(saves[index-1] !== undefined){
+    if(index-1 >= 0){
         res.status(200).send(`${saves[index-1]}`);
         index--;
 
+    }else{
+        res.send(``);
     }
 })
 
 app.get('/next', (req,res) => {
-    if(saves[index+1] !== undefined){
+    if(index+1 < saves.length){
         res.status(200).send(`${saves[index+1]}`)
         index++;
 
+    }else{
+        res.send(``);
     }
 })
 
