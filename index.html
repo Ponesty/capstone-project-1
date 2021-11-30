@@ -7,9 +7,14 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="index.css">
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     </head>
     <body>
-       <div>
+        <div>
+            <h2>The Simple Calculator</h2>
+
+        </div>
+       <div id='calculator'>
            <table border="1">
                 <tr>
                     <td colspan="3"><input type="text" id="input"></td>
@@ -42,14 +47,15 @@
                  <tr>
                     <td><button id="decimal">.</button> </td>
                     <td><button id='zero'/>0</button></td>
-                    <!-- solve function call function solve to evaluate value -->
                     <td><button id='equal'>=</button> </td>
                     <td><button id='multiply'>*</button> </td>
                  </tr>
            </table>
-       </div>
+        </div>
+        <button id='update'>Update History</button>
+        <ol id='History'>History:</ol>
         
         <script src="index.js" async defer></script>
-        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
     </body>
 </html>

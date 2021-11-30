@@ -1,6 +1,3 @@
-
-
-
 let input = document.querySelector('input');
 
 document.querySelector('#add').onclick = () => input.value+='+';
@@ -23,8 +20,27 @@ document.querySelector('#eight').onclick = () => input.value+='8';
 document.querySelector('#nine').onclick = () => input.value+='9';
 document.querySelector('#zero').onclick = () => input.value+='0';
 
-//document.querySelector('#equal').onclick = () => input.value = eval(input.value);
 
+
+
+const history = () => { 
+    axios.get(`http://localhost:4004/history`)
+    .then(function (response) {
+        let arr = response.data.split(',');
+        let historyOl = document.querySelector('#History');
+        console.log(arr);
+        for(let i=0; i<arr.length;i++){
+        let addToList = document.createElement('li');
+        console.log(arr[i]);
+        addToList.append(arr[i]);
+        historyOl.appendChild(addToList);
+
+        }
+    })
+
+}
+
+history();
 
 
 document.querySelector('#equal').onclick = function () {axios.post(`http://localhost:4004/solution`,{data: input.value})
@@ -43,3 +59,6 @@ document.querySelector('#next').onclick = function () {axios.get(`http://localho
 .then(function (response) {
     input.value = response.data;
 })}
+
+
+

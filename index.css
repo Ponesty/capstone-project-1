@@ -4,3 +4,25 @@ button {
     border: solid black 2px;
     width:100%
 }
+
+#calculator {
+    position: absolute;
+    left: 42%;
+    top: 30%;
+    transform: translate (-50%, -50%);
+    border: 5px solid black;
+    padding: 10px;
+    background-color: steelblue;
+}
+
+h2 {
+    background-color: #3C1642;
+    border: 5px solid green;
+    color: white;
+}
+
+body {
+    background-color: #71B48D;
+}
+
+

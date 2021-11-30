@@ -8,7 +8,7 @@ app.use(cors());
 
 
 let saves = [];
-let index;
+let index
 
 app.post('/solution', (req,res) =>{
     let equation = req.body.data;
@@ -39,6 +39,14 @@ app.get('/next', (req,res) => {
     }else{
         res.send(``);
     }
+})
+
+app.get('/history', (req,res) => {
+    if(saves){
+        res.status(200).send(`${saves}`)
+
+    }
+    
 })
 
 
