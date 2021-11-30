@@ -1,3 +1,13 @@
+.flex-container {
+    display: flex;
+    position: absolute;
+    top: 40%;
+    left: 43%;
+}
+
+
+
+
 button {
     background-color:#848C8E;
     color: black;
@@ -6,10 +16,8 @@ button {
 }
 
 #calculator {
-    position: absolute;
-    left: 42%;
-    top: 30%;
-    transform: translate (-50%, -50%);
+    
+    /* transform: translate (-50%, -50%); */
     border: 5px solid black;
     padding: 10px;
     background-color: steelblue;
@@ -19,10 +27,20 @@ h2 {
     background-color: #3C1642;
     border: 5px solid green;
     color: white;
+    text-align: center;
 }
 
 body {
     background-color: #71B48D;
 }
+
+/* #History {
+    position: absolute;
+    left: 57%;
+    top: 27%;
+    transform: translate (-50%, -50%);
+    padding: 10px;
+    
+} */
 
 

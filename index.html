@@ -14,46 +14,48 @@
             <h2>The Simple Calculator</h2>
 
         </div>
-       <div id='calculator'>
-           <table border="1">
-                <tr>
-                    <td colspan="3"><input type="text" id="input"></td>
-                    <td><button id='clr'>C</button></td>
-                </tr>
-                <tr>
-                    <td><button id='prev'><</button></td>
-                    <td><button id='open'>(</button></td>
-                    <td><button id='close'>)</button></td>
-                    <td><button id='next'>></button></td>
-                </tr>
-                <tr>
-                    <td><button id='one'>1</button> </td>
-                    <td><button id='two'>2</button> </td>
-                    <td><button id='three'>3</button> </td>
-                    <td><button id='divide'>/</button> </td>
-                </tr>
-                <tr>
-                    <td><button id='four'>4</button> </td>
-                    <td><button id='five'>5</button> </td>
-                    <td><button id='six'>6</button> </td>
-                    <td><button id='subtract'>-</button> </td>
-                 </tr>
-                 <tr>
-                    <td><button id='seven'>7</button> </td>
-                    <td><button id='eight'>8</button> </td>
-                    <td><button id='nine'>9</button> </td>
-                    <td><button id='add'>+</button> </td>
-                 </tr>
-                 <tr>
-                    <td><button id="decimal">.</button> </td>
-                    <td><button id='zero'/>0</button></td>
-                    <td><button id='equal'>=</button> </td>
-                    <td><button id='multiply'>*</button> </td>
-                 </tr>
-           </table>
+        <div class='flex-container'>
+            <div id='calculator' class='item'>
+                <table border="2" style="padding: 10px">
+                     <tr>
+                         <td colspan="3"><input type="text" id="input" placeholder="Enter equation"></td>
+                         <td><button id='clr'>C</button></td>
+                     </tr>
+                     <tr>
+                         <td><button id='prev'><</button></td>
+                         <td><button id='open'>(</button></td>
+                         <td><button id='close'>)</button></td>
+                         <td><button id='next'>></button></td>
+                     </tr>
+                     <tr>
+                         <td><button id='one'>1</button> </td>
+                         <td><button id='two'>2</button> </td>
+                         <td><button id='three'>3</button> </td>
+                         <td><button id='divide'>/</button> </td>
+                     </tr>
+                     <tr>
+                         <td><button id='four'>4</button> </td>
+                         <td><button id='five'>5</button> </td>
+                         <td><button id='six'>6</button> </td>
+                         <td><button id='subtract'>-</button> </td>
+                      </tr>
+                      <tr>
+                         <td><button id='seven'>7</button> </td>
+                         <td><button id='eight'>8</button> </td>
+                         <td><button id='nine'>9</button> </td>
+                         <td><button id='add'>+</button> </td>
+                      </tr>
+                      <tr>
+                         <td><button id="decimal">.</button> </td>
+                         <td><button id='zero'/>0</button></td>
+                         <td><button id='equal'>=</button> </td>
+                         <td><button id='multiply'>*</button> </td>
+                      </tr>
+                </table>
+             </div>
+             <ol id='History'class='item'>History:</ol>
+
         </div>
-        <button id='update'>Update History</button>
-        <ol id='History'>History:</ol>
         
         <script src="index.js" async defer></script>
 
