@@ -17,7 +17,6 @@ button {
 
 #calculator {
     
-    /* transform: translate (-50%, -50%); */
     border: 5px solid black;
     padding: 10px;
     background-color: steelblue;
@@ -34,13 +33,5 @@ body {
     background-color: #71B48D;
 }
 
-/* #History {
-    position: absolute;
-    left: 57%;
-    top: 27%;
-    transform: translate (-50%, -50%);
-    padding: 10px;
-    
-} */
 
 

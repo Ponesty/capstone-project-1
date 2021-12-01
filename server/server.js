@@ -17,7 +17,8 @@ app.post('/solution', (req,res) =>{
     }
     saves.push(equation);
     index = saves.length;
-    let solution = eval(equation);
+    let solution = Function("return " + equation)();
+    //let solution = eval(equation);
     res.status(200).send(`${solution}`);
 });
 

@@ -1,5 +1,7 @@
+//The input box
 let input = document.querySelector('input');
 
+//All buttons except the arrows and equal
 document.querySelector('#add').onclick = () => input.value+='+';
 document.querySelector('#subtract').onclick = () => input.value+='-';
 document.querySelector('#multiply').onclick = () => input.value+='*';
@@ -22,7 +24,7 @@ document.querySelector('#zero').onclick = () => input.value+='0';
 
 
 
-
+//Function getting equation history from server.
 const history = () => { 
     axios.get(`http://localhost:4004/history`)
     .then(function (response) {
@@ -40,9 +42,11 @@ const history = () => {
 
 }
 
+//Calling history function
 history();
 
 
+//The equal button making a post request to server when clicked
 document.querySelector('#equal').onclick = function () {axios.post(`http://localhost:4004/solution`,{data: input.value})
 .then(function (response) {
     input.value = response.data;
@@ -50,6 +54,8 @@ document.querySelector('#equal').onclick = function () {axios.post(`http://local
 });
 }
 
+
+//The arrow buttons making get requests to server when they are clicked.
 document.querySelector('#prev').onclick = function () {axios.get(`http://localhost:4004/previous`)
 .then(function (response) {
     input.value = response.data;
