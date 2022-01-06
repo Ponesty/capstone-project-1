@@ -26,14 +26,14 @@ document.querySelector('#zero').onclick = () => input.value+='0';
 
 //Function getting equation history from server.
 const history = () => { 
-    axios.get(`http://localhost:4004/history`)
+    axios.get(`http://localhost:4004/history`) // Sending get request to retrieve history array on server.
     .then(function (response) {
-        let arr = response.data.split(',');
+        let arr = response.data.split(','); //Array needs to be split by commas
         let historyOl = document.querySelector('#History');
-        console.log(arr);
-        for(let i=0; i<arr.length;i++){
+        //console.log(arr);
+        for(let i=0; i<arr.length;i++){ //Loop though array and adding to list in html
         let addToList = document.createElement('li');
-        console.log(arr[i]);
+        //console.log(arr[i]);
         addToList.append(arr[i]);
         historyOl.appendChild(addToList);
 
