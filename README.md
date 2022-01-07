@@ -20,6 +20,11 @@ Javascript <br />
 Axios <br />
 Express
 
+## MVP
+- Addition, Subtraction, Multiplication, Division <br />
+- Can search for previously used equations and reenter or edit as needed. <br />
+- Equation history is saved and shown on screen after page refresh.
+
 ### Starting up Server
 - Open up the capstoneproject folder in vs code. <br />
 - In the terminal run nodemon server/server.js. <br />
