@@ -9,6 +9,7 @@ This is my first capstone project with BrightPaths. It is a calculator that can 
 
 ### Table of Content
 [Tools Used](#tools-used)<br />
+[MVP](#MVP)<br />
 [Starting up Server](#starting-up-server) <br />
 [Using Calculator](#using-calculator) <br />
 [Creator](#creator)
@@ -20,7 +21,7 @@ Javascript <br />
 Axios <br />
 Express
 
-## MVP
+### MVP
 - Addition, Subtraction, Multiplication, Division <br />
 - Can search for previously used equations and reenter or edit as needed. <br />
 - Equation history is saved and shown on screen after page refresh.
